@@ -1,0 +1,81 @@
+body {
+	height: 1500px;
+}
+
+#box {
+	/*这个box一般称为舞台或者场景，包含着3D*/
+	transform-style: preserve-3d;
+	/*设置3d效果   默认的是2d*/
+	perspective: 1200px;
+	/*3D视角距离*/	
+	/*Z轴向着观察者的方向为正*/
+	transition: 5s infinite;
+	transform: rotateX(0deg) rotateY(0deg);
+}
+#mo_box {
+	margin: 150px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 5s;
+	transform: rotateX(0deg) rotateY(0deg);
+}
+
+.mofang {
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	position: absolute;
+}
+
+.left {	
+	background-color: yellow;
+	transform: rotateY(90deg) translateZ(-100px);
+}
+
+.right {
+	background-color: blue;
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+	background-color: greenyellow;
+	transform: rotateX(90deg) translateZ(100px) rotateZ(360deg);
+}
+
+.bottom {
+	background-color: navajowhite;
+	transform: rotateX(90deg) translateZ(-100px) rotateZ(180deg);
+}
+.behind {
+	background-color: gray;
+	transform: translateZ(-100px) rotateZ(180deg);
+}
+.before {
+	background-color: red;
+	transform: translateZ(100px);     /*向我的方向平移100px*/    
+}
+.mo_box{
+	animation: myfirst 10s linear infinite;
+}
+@keyframes myfirst{
+	0%{
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+	}
+	100%{
+		-webkit-transform: rotateX(360deg) rotateY(360deg);
+}
+.clear{
+	clear:both;
+.fl{
+	background: red;
+	border: 2px solid white;
+	float: left;
+	height: 65px;
+	width: 65px;
+	text-align: center;
+	line-height: 68px;
+	position: absolute;
+}
