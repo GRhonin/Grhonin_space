@@ -1,0 +1,128 @@
+html,body{
+	height: 100%;
+}
+#myvideo{
+	position: absolute;
+	top: 23px;
+	left: calc(50% - 300px);
+}
+.control{
+	position: absolute;
+	top: 390px;
+	left: calc(50% - 300px);
+	width: 600px;
+	height: 30px;
+	background-color: rgba(9,9,9,0.2);
+}
+.control>div{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+}
+.control .floor2{
+	color: eeeeee;
+	font-size: 12px;
+	margin-left: 20px;
+	padding-top: 8px;
+	width: 100px;
+}
+.control .floor3{
+	position: absolute;
+	left: 450px;
+	background: url(../img/videologo1.png) no-repeat -193px -13px;
+	background-size: 800%;
+}
+.control .voicebox{
+	position: absolute;
+	left: 480px;
+	display: none;
+	height: 30px;
+	width: 130px;
+	border-radius: 2px;
+	z-index: 100;
+}
+.progress{
+	position: absolute;
+	top: 390px;
+	left: calc(50% - 300px);
+	width: 598px;
+	height: 0px;
+	border: 1px #ccc solid;
+	overflow: hidden;
+	background-color: white;
+}
+.progress .probox{
+	width: 0;
+	height: 18px;
+	background-color: aqua;
+}
+.progress .boxctro{
+	margin-left: -10px;
+	position: relative;
+	top: -18px;
+	height: 18px;
+	background-color: #0000FF;
+	width: 20px;
+}
+.control .voicebox .line{
+	position: absolute;
+	width: 100px;
+	height: 0px;
+	border: 2px white solid;
+	margin-top: 13px;
+}
+.control .voicebox .box{
+	position: relative;
+	top: 9px;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background-color: #999999;
+	z-index: 500;
+	left: 40px;
+}
+.control>div:hover{
+	cursor: pointer;
+}
+.control .floor1{
+	background: url(../img/videologo1.png) no-repeat -13px -13px;
+	background-size: 800%;
+}
+.control:after{
+	display: inline-block;
+	content: 0;
+	height: 0;
+	clear: both;
+}
+#barrage{
+	position: absolute;
+	top: 5px;
+	left: 140px;
+	height: 16px;
+	width: 255px;
+	outline: none;
+}
+.control .btn{
+	border: 1px #999 solid;
+	border-radius: 2px;
+	position: absolute;
+	top: 5px;
+	left: 400px;
+	font-size: 10px;
+	height: 20px;
+	width: 50px;
+	background-color: darkred;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+}
+/*弹幕*/
+.cover{
+	height: 320px;
+	width: 600px;
+	position: absolute;
+	top: 50px;
+	left: calc(50% - 300px);
+	z-index: 5000;	
+}
