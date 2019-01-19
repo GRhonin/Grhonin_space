@@ -78,7 +78,6 @@ $(function() {
 	}).mousedown(function(e) {
 		$x = e.pageX - parseInt($voicebox.css("left"));
 		$(document).mousemove(function(e) {
-			console.log(6);
 			var x = e.pageX - $x;
 			if(x > -2 && x < 95) {
 				$voicebox.css("left", x);
@@ -132,7 +131,9 @@ $(function() {
 			"color":"white",
 			"position":"absolute",
 			"top":h,
-			"left":"600px"
+			"left":"600px",
+			"whiteSpace": "nowrap",
+			"overflow": "hidden"
 		})
 		var le = 0;
 		console.log(text1.length);
