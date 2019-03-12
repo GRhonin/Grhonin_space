@@ -35,12 +35,7 @@
                                 this.drop = !this.drop;
                         },
 		        toProfile(){
-                                if(Cookies.get('name')){
-                                        this.$router.push({ path: '/profile' });
-                                }else{
-                                        Cookies.set('url', this.$router.path);
-                                        this.$router.replace({ path: '/login' });
-                                }
+			        this.$router.push({ path: '/profile' });
 		        },
                         backpage(){
                                 this.$router.push('/');

@@ -238,16 +238,12 @@
 	                                        })
 	                                        .catch(err => console.log(err.message));
                                 }else{
-                                        Cookies.set('url', this.$route.path);
+                                        Cookies.set('topath', this.$route.path);
                                         this.$router.replace({ path: '/login' });
                                 }
 		        },
 		        toCartpage(){
-		                if(Cookies.get('name')) this.$router.push('/cart');
-		                else {
-		                        Cookies.set('url', '/cart');
-		                        this.$router.replace('/login');
-		                }
+		                this.$router.push('/cart');
 		        }
 	        },
 	        created(){

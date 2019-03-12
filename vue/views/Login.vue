@@ -73,7 +73,7 @@
                                                         .then(result => {
                                                                 if(!result.result){
                                                                         Cookies.set('name', this.login.uName);
-                                                                        this.$router.replace(Cookies.get('url'));
+                                                                        this.$router.replace(Cookies.get('topath'));
                                                                 } else alert(result[0]);
                                                         })
                                                         .catch(err => alert(err.message));
@@ -86,7 +86,7 @@
                                                         .then(result => {
                                                                 if(!result.result){
                                                                         Cookies.set('name', this.login.uName);
-                                                                        this.$router.replace(Cookies.get('url'));
+                                                                        this.$router.replace(Cookies.get('topath'));
                                                                 }
                                                         })
                                                         .catch(err => alert(err.message));

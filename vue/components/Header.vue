@@ -52,10 +52,7 @@
 				else if(!this.navShow) this.headClass = 'headerShort'
 		        },
 		        toLogin(){
-		                Cookies.set('url', this.$route.path);
-		                if(this.userName === '登录/注册'){
-		                        this.$router.push('/login');
-		                }else this.$router.push('/profile');
+			        this.$router.push('/profile');
 		        }
 	        }
         };
