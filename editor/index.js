@@ -1,3 +1,2 @@
-window.onload = function(){
-    console.log(999);
-}
+let boldBtn = document.getElementById("boldBtn");
+let editTxt = document.getElementById("editorTxt").innerHTML;
