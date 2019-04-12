@@ -1,5 +1,9 @@
 <template>
-    <div class=container></div>
+    <div class=container>
+        <ul class="nav">
+            <li><span></span></li>
+        </ul>
+    </div>
 </template>
 <script>
 export default {

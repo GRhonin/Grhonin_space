@@ -7,6 +7,7 @@
 </template>
 <script>
 import iview from 'iview';
+import Router from 'vue-router';
 export default {
     name: 'index',
     data(){
@@ -16,7 +17,7 @@ export default {
     },
     methods: {
         toEditor(){
-            console.log('去编辑器');
+            this.$router.push({ path: '/editor' });
         }
     }
 }

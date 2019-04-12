@@ -1,0 +1,36 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.txt-container{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #d3d3d3;
+    margin: 50px auto;
+}
+ul{
+    list-style: none;
+}
+.nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #d3d3d3;
+}
+.nav li span{
+    padding: 0 15px;
+    border-right: 1px solid #d3d3d3;
+}
+.nav li span:hover{
+    cursor: pointer;
+}
+.txt-editor{
+    width: 100%;
+    height: calc(100% - 39px);
+    background-color: #ddffff;
+    padding: 10px;
+}
